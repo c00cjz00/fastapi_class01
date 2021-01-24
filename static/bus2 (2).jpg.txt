@@ -1,0 +1,1 @@
+[{"class": "minibus", "confidence": "63.04 %"}, {"class": "police_van", "confidence": "25.17 %"}, {"class": "amphibian", "confidence": "3.45 %"}]

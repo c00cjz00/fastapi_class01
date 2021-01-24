@@ -7,8 +7,8 @@ from fastapi import FastAPI, File, UploadFile
 # 載入starlette, 功能 Restful api
 from starlette.responses import RedirectResponse
 
-# 載入  application/components/prediction/serve_model.py 之 Def:  predict, read_imagefile
-from serve_model import predict, read_imagefile
+# 載入  class03_serve_model.py 之 Def:  predict, read_imagefile
+from class03_serve_model import predict, read_imagefile
 
 # 描述 app 
 app_desc = """<h2>Try this app by uploading any image with `predict/image`</h2>
@@ -46,7 +46,7 @@ async def predict_api(file: UploadFile = File(...)):
         image = read_imagefile(await file.read())
         image.save("static/" + filename)        
         # 圖片預測函式
-        predictionMessage = predict(mycmd)
+        predict(mycmd)
         # 傳回預測結果
         f = open("static/" + filename + ".txt", "r")
         predictionMessage = (f.read())
