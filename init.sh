@@ -11,6 +11,8 @@ git config --global user.email summerhill001@gmail.com
 git checkout master
 git rm 1.txt
 git commit -m "remove 1.txt"
+git rm -r __pycache__
+git commit . -m "__pycache__"
 git add *
 git commit -m "init"
 # 上傳至遠端
