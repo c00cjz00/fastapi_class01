@@ -9,7 +9,8 @@ git config --global user.name "c00cjz00"
 git config --global user.email summerhill001@gmail.com
 #git pull
 git checkout master
-git del 1.txt
+git rm 1.txt
+git commit -m "remove 1.txt"
 git add *
 git commit -m "init"
 # 上傳至遠端
