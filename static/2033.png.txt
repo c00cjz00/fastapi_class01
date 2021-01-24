@@ -1,0 +1,1 @@
+[{"class": "Egyptian_cat", "confidence": "31.95 %"}, {"class": "tiger_cat", "confidence": "24.93 %"}, {"class": "tabby", "confidence": "24.22 %"}]
